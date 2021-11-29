@@ -1,4 +1,5 @@
-#By Đông Quân
+# Created by Đông Quân
+# Import modules
 import os
 import sys
 import argparse
