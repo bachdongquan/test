@@ -1,3 +1,4 @@
+#By Đông Quân
 import os
 import sys
 import argparse
@@ -18,22 +19,22 @@ except ImportError as err:
 # Parse args
 parser = argparse.ArgumentParser(description="Denial-of-service ToolKit")
 parser.add_argument(
-    "--s",
+    "--target",
     type=str,
     metavar="<IP:PORT, URL, PHONE>",
     help="Target ip:port, url or phone",
 )
 parser.add_argument(
-    "--m",
+    "--method",
     type=str,
     metavar="<SMS/EMAIL/NTP/UDP/SYN/ICMP/POD/SLOWLORIS/MEMCACHED/HTTP>",
     help="Attack method",
 )
 parser.add_argument(
-    "--t", type=int, default=10, metavar="<time>", help="time in secounds"
+    "--time", type=int, default=10, metavar="<time>", help="time in secounds"
 )
 parser.add_argument(
-    "--l", type=int, default=3, metavar="<threads>", help="threads count (1-200)"
+    "--threads", type=int, default=3, metavar="<threads>", help="threads count (1-200)"
 )
 
 # Get args
